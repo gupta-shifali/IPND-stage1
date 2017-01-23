@@ -1,0 +1,90 @@
+body {
+ background-color : black;
+ font-family : 'Malgun Gothic';
+}
+.stage {
+ background-color : #abec67;
+ border-radius : 25px;
+ margin : 20px;
+ padding : 5px;
+}
+.Ind {
+ background-color : white;
+ border-radius : 25px;
+ margin : 20px;
+ padding : 5px;
+ font-family : 'Malgun Gothic';
+ font-weight : bold;
+ background-color : white;
+ font-size : 20px;
+ line-height : 38px;
+}
+p {
+ padding : 15px;
+ border-radius : 15px;
+ background-color : white;
+ margin : 10px;
+ outline : 5px solid white;
+ line-height : 1.5;
+}
+.para_content {
+ padding : 1px;
+ border-radius : 15px;
+ background-color : white;
+ margin : 10px;
+ outline : 5px solid white;
+ line-height : 1.5;
+}
+#main {
+ background-color : black;
+ color : white;
+ margin : 20px;
+ padding : 5px;
+ text-align : center;
+}
+.image {
+ margin-left : 32%;
+}
+.title {
+ background-color : hsl(71, 100%, 64%);
+ text-align : center;
+ margin : 10px;
+ padding : 3px;
+ outline : 5px solid hsl(71, 100%, 64%);
+}
+.intro {
+ padding : 1px;
+ border-radius : 15px;
+ background-color : white;
+ margin : 20px;
+ outline : 5px solid white;
+}
+.sub_title {
+ margin : 10px;
+ padding : 1px;
+}
+.code {
+ font-style : italic;
+ font-weight : bold;
+}
+.end {
+ background-color : white;
+ margin-left : 48%;
+ padding : 3px;
+ border-radius : 100px;
+ width : 100px;
+ text-align : center;
+}
+.contents {
+ margin : 10px;
+}
+h2 {
+ margin : 20px;
+}
+h1 {
+ margin : 20px;
+}
+h3 {
+ padding : 2px;
+ font-size : larger;
+}

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>My HTML Page</title>
+      <link rel="stylesheet" href="stage1.css">
+   </head>
+   <body>
+      <h1 id="main">WELCOME ... TO THE WORLD OF HTML</h1>
+      <div class="Ind">
+         <h2>Index</h2>
+         <ol>
+            <li>
+               <a href="#stg0">STAGE-0 LESSONS</a>
+               <ol>
+                  <li>
+                     <a href="#title1">Introduction To HTML</a>
+                     <ul>
+                        <li><a href="#mini_title1">HTML Markup</a></li>
+                        <li><a href="#mini_title2">Whitespace</a></li>
+                        <li><a href="#mini_title3">Document Structure</a></li>
+                     </ul>
+                  </li>
+               </ol>
+            </li>
+            <li>
+               <a href="#stg1">STAGE-1 LESSONS</a>
+               <ol>
+                  <li>
+                     <a href="#title2">Creating A Structured Document</a>
+                     <ul>
+                        <li><a href="#mini_title4">HTML's Tree-like Structure</a></li>
+                        <li><a href="#mini_title5">More About(HTML,CSS,DOM)</a></li>
+                        <li><a href="#mini_title6">Boxifying The Design</a></li>
+                        <li><a href="#mini_title7">Text Editors</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#title3">Adding CSS Style And HTML Structure</a>
+                     <ul>
+                        <li><a href="#mini_title8">Understanding CSS</a></li>
+                        <li><a href="#mini_title9">CSS Vocabulary</a></li>
+                        <li><a href="#mini_title10">Box Sizing And Positioning</a></li>
+                        <li><a href="#mini_title11">Code, Test, Refine</a></li>
+                        <li><a href="#mini_title12">Validating your code</a></li>
+                     </ul>
+                  </li>
+               </ol>
+            </li>
+         </ol>
+      </div>
+      <div class="stage">
+         <h1  id="stg0">STAGE-0 LESSONS</h1>
+         <hr>
+         <h2 id="title1">Introduction To HTML</h2>
+         <div class="intro">
+            <p>
+               The web, <em>invented in 1990</em> is composed largely of HTML documents.
+               HTML stands for <b>Hypertext Markup Language</b> and is the language the browsers use to interpret web pages.
+               HTML is used to create electronic documents (called pages) that are displayed on
+               the <a href="http://www.computerhope.com/jargon/w/www.htm">World Wide Web</a>.
+               We use <b>HTML tags</b> to create a simple HTML document that a browser can display as a web page.<br><br>
+               <b>Basically HTML is made up of :-</b>
+            </p>
+            <ol>
+               <li> Text content</li>
+               <li> Markup</li>
+               <li> Refrences</li>
+               <li> Links to other pages</li>
+            </ol>
+         </div>
+         <div class="contents">
+            <div class="title">
+               <h3 id="mini_title1">HTML Markup</h3>
+            </div>
+            <div class="sub_content">
+               <div class="sub_title">
+                  <h4><em><u>HTML Tags</u></em></h4>
+               </div>
+               <p>
+                  Most HTML elements consist of an opening and a closing tag with some content between them.<br>
+                  Its like :-
+                  <br><br>
+                  <b>&lt; TAG NAME (Opening) &gt; Contents &lt; &sol;TAG NAME (Closing) &gt;</b><br><br>
+                  <em>For example,</em><br><br>
+                  <b>&lt;b&gt;</b> text <b>&lt;&sol;b&gt;</b>  -  b is for bold and it makes the 'text' content <b>bold</b>.<br>
+                  <b>&lt;em&gt;</b> text <b>&lt;&sol;em&gt;</b>  -  em is for emphasis and it makes the 'text' content <em>italic</em>.
+               </p>
+            </div>
+            <div class="sub_content">
+               <div class="sub_title">
+                  <h4><em><u>HTML Attributes</u></em></h4>
+               </div>
+               <p>
+                  Some elements accept additional values called attributes in their opening tags.
+                  Attributes provide additional information to the browser.<br>
+                  Its like :-
+                  <br><br>
+                  <b>&lt; TAG NAME ATTR(attribute name) = "value" &gt; Contents &lt; &sol;TAG NAME &gt;</b><br><br>
+                  <em>For example</em>,<br><br>
+                  <b>&lt;a&gt;</b> tag - The <b>anchor tag</b> takes an attribute called <em>href</em> that defines a URL to
+                  <a href="http://www.w3schools.com/html/html_links.asp">link</a> - Creates a hyperlink to the href attribute value url and names it link.
+               </p>
+            </div>
+            <div class="sub_content">
+               <div class="sub_title">
+                  <h4><em><u>Adding Images</u></em></h4>
+               </div>
+               <p id="img">
+                  <b>&lt;img&gt;</b> tag - <br> <br> <img class="image" src="http://byte.at/wp-content/uploads/2012/05/html-400x300.jpg" alt="html logo"> <br><br>
+                  Its like :-
+                  <br><br>
+                  <b>&lt;img src="url" alt="text"&gt;</b><br><br>
+                  Displays the image hosted at the src attribute value "url" (this can also be a path to a local file on your computer).<br>
+                  If the image cannot be displayed, then the alt attribute value "text" is shown.<br>
+                  For more details, we can learn from <a href="http://www.w3schools.com/html/html_images.asp">internet</a>.
+               </p>
+            </div>
+         </div>
+         <div class="contents">
+            <div class="title">
+               <h3  id="mini_title2">Whitespace</h3>
+            </div>
+            <div class="sub_content">
+               <div class="para_content">
+                  <p>
+                     HTML takes all text as one line, pressing enter makes no difference. So to input text in next line we use two tags specificly :-
+                  </p>
+                  <ol>
+                     <li> <b>&lt;br&gt;</b> tag - br stands for break. The text entered after this tag comes in the next line. Moreover, it is a void tag i.e. having no closing.</li>
+                     <li> <b>&lt;p&gt;</b> tag - p stands for paragraph. The text in this tag comes in form of paragraph. And, it is not void tag i.e. we need to close this tag.</li>
+                  </ol>
+               </div>
+               <div class="sub_title">
+                  <h4><u>Inline vs Block Elements</u></h4>
+               </div>
+               <p>
+                  In HTML, all the spaces between some text comes in just one single space, so we put a &lt;br&gt; tag there which is <em>inline</em>. <br>While &lt;p&gt; tag is <em>block</em> i.e. makes a invisible
+                  box around text which is having height and length.
+               </p>
+            </div>
+         </div>
+         <div class="contents">
+            <div class="title">
+               <h3 id="mini_title3">Document Structure</h3>
+            </div>
+            <p>
+               Writing code that people can easily read is a <em>VERY</em> important idea in computer programming. And a huge part of writing good code is structuring it well.
+               If you've ever written an English essay, you're familiar with the purpose of <em>indenting</em> every paragraph.
+               In HTML particularly, the indentation level increases when an idea begins and decreases when an idea is finished.
+               let's look at this example :-<br><br>
+               <img class="image" src="images/Capture.png" alt="html str"><br><br>
+            </p>
+         </div>
+         <br>
+      </div>
+      <div class="stage">
+         <h1 id="stg1">STAGE-1 LESSONS</h1>
+         <hr>
+         <div>
+            <h2 id="title2">Creating A Structured Document</h2>
+            <div class="contents">
+               <div class="title">
+                  <h3 id="mini_title4">HTML's Tree-like Structure</h3>
+               </div>
+               <P>
+                  The "<b>tree-like structure</b>" comes from the fact that HTML elements can have other elements inside of them. You can draw this relationship like a family tree.
+                  In a browser, this structure shows up as a series of nested boxes. There are boxes inside of boxes inside of boxes, and <em>so on</em>...<br>
+                  To know more about <a href="https://en.wikipedia.org/wiki/Tree_structure">tree structures</a> you can read them from internet.<br><br>
+                  <img class="image" src="http://eloquentjavascript.net/1st_edition/img/html.png" alt="tree str">
+               </P>
+            </div>
+            <div class="contents">
+               <div class="title">
+                  <h3  id="mini_title5">More About</h3>
+               </div>
+               <div class="sub_content">
+                  <div class="sub_title">
+                     <h4><em><u>HTML</u></em></h4>
+                  </div>
+                  <p>
+                     <b>HyperText Markup Language</b> - the standard markup language used to create web pages.
+                     It is a language with syntax and rules. Browser turns tags in html into elements that form a tree.
+                  </p>
+               </div>
+               <div class="sub_content">
+                  <div class="sub_title">
+                     <h4><em><u>CSS</u></em></h4>
+                  </div>
+                  <p>
+                     <b>Cascading Style Sheets</b> - <em>style sheet language</em> used for describing the look and formatting of a document written in a markup language.
+                  </p>
+               </div>
+               <div class="sub_content">
+                  <div class="sub_title">
+                     <h4><em><u>DOM</u></em></h4>
+                  </div>
+                  <p>
+                     <b>Document Object Model</b> - a <em>cross-platform</em> and <em>language-independent</em> convention for representing and interacting with objects in HTML (and other markup languages).
+                     The nodes of every document are organized in a tree structure, called <em>the DOM tree</em>.
+                  </p>
+               </div>
+            </div>
+            <div class="contents">
+               <div class="title">
+                  <h3  id="mini_title6">Boxifying The Design</h3>
+               </div>
+               <p>
+                  Web pages are made with <em>rectangular boxes</em> that may contain all other forms.
+                  It's a good idea to think of all elements as boxes, for the ability to structure elements visually on a grid.
+                  So, <em>in html</em>, everything is a block. Programmers use Div tags to make those blocks and classes are used to identify and label each div tag(<em>block</em>).
+               </p>
+            </div>
+            <div class="contents">
+               <div class="title">
+                  <h3  id="mini_title7">Text Editors</h3>
+               </div>
+               <div class="para_content">
+                  <p>
+                     Text editors make programmer's life <em>easier</em>. They help coders write code faster and more efficiently.
+                     For example, some text editors will automatically generate a closing HTML tag when you write an opening tag.
+                     Some text editors are :-
+                  </p>
+                  <ol>
+                     <li> Atom </li>
+                     <li> Brackets </li>
+                     <li> Sublime Text </li>
+                  </ol>
+               </div>
+            </div>
+         </div>
+         <div>
+            <h2 id="title3">Adding CSS Style And HTML Structure</h2>
+            <div class="contents">
+               <div class="title">
+                  <h3 id="mini_title8">Understanding CSS</h3>
+               </div>
+               <P>
+                  <b>Cascading Style Sheets</b> is code written to define the "<em>style</em>" of HTML elements in a webpage.
+                  CSS can have multiple CSS files referenced in an HTML document. It creates the look and feel of a page.
+                  <em>Cascading</em> means you keep going down until you find the rule that is most specific to the element.
+                  It is an adaptation of the programming principle of inheritance.
+               </P>
+               <div>
+                  <div class="sub_title">
+                     <h4><em><u>Search and Replace</u></em></h4>
+                  </div>
+                  <p>
+                     CSS can also be used as search and replace tool : you can identify a class or a tag of the element you want to find,
+                     and then apply that rule to it or do what you want to do with it, or what property values to replace with different ones.
+                  </p>
+               </div>
+               <div>
+                  <div class="sub_title">
+                     <h4><em><u>Reducing Complexity</u></em></h4>
+                  </div>
+                  <p>
+                     By utilizing CSS you can reduce the <em>complexity</em> and <em>repetition</em> of having to edit individual sections of HTML
+                     in order to change how it looks in the browser. Instead you just apply the desired style with CSS and as a result,
+                     it can be easily changed whenever necessary without having to edit the HTML extensively or at all.
+                  </p>
+               </div>
+               <p>
+                  Moreover, you can use various CSS <em>selectors</em> to define styles, which in turn changes the styling of corresponding HTML elements.
+                  A great resource to learn new CSS properties is: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Mozilla CSS reference page</a>.
+               </p>
+            </div>
+            <div class="contents">
+               <div class="title">
+                  <h3 id="mini_title9">CSS Vocabulary</h3>
+               </div>
+               <div class="para_content">
+                  <ol>
+                     <li>
+                        <span class="code">Style</span> : This word can refer to many things and so it can be confusing. It can refer to :-
+                        <ul>
+                           <li>The HTML element.</li>
+                           <li>The HTML attribute.</li>
+                           <li>The general look of a web page.</li>
+                        </ul>
+                     </li>
+                     <li> <span class="code">Rule</span> : a line of CSS code describing the value that a certain attribute should take.</li>
+                     <li> <span class="code">Property</span> : The property you want to change.</li>
+                     <li> <span class="code">Value</span> : The value that you want to assign to the attribute.</li>
+                     <li> <span class="code">Selector</span> : The name that you use to in order to target the elements that are assigned to a class or id attribute in the HTML.</li>
+                     <li> <span class="code">Class</span> : A class refers to a group of elements that can be styled together. Class names should not contain periods or any other punctuation marks.</li>
+                     <li> <span class="code">ID</span> : ID's are unique identifiers that uniquely identifies an element in HTML.</li>
+                  </ol>
+               </div>
+            </div>
+            <div class="contents">
+               <div class="title">
+                  <h3 id="mini_title10">Box Sizing And Positioning</h3>
+               </div>
+               <div>
+                  <div class="sub_title">
+                     <h4><em><u>Box Sizing</u></em></h4>
+                  </div>
+                  <div class="para_content">
+                     <p>
+                        There are four main points about box sizing :-<br>
+                     </p>
+                     <ol>
+                        <li> HTML elements are boxes and each box has 4 components : margin, border, padding, content.</li>
+                        <li> Because there are so many components to each box, it can often be hard to get the size of a box just right.</li>
+                        <li>
+                           There are two techniques you can use to help deal with sizing issues.
+                           <ul>
+                              <li>Set sizes in terms of percentages rather than pixels.</li>
+                              <li>Set the <em>box-sizing</em> attribute to <em>border-box</em> for every element.</li>
+                           </ul>
+                        </li>
+                        <li> Different browsers work slightly differently. Sometimes this causes different browsers to display the same code differently.</li>
+                     </ol>
+                  </div>
+               </div>
+               <div>
+                  <div class="sub_title">
+                     <h4><em><u>Box Positioning</u></em></h4>
+                  </div>
+                  <div class="para_content">
+                     <ol>
+                        <li> Divs are <em>block</em> elements (as opposed to <em>inline</em>), so by default they take up the entire width of a page.</li>
+                        <li> Adding the rule <em>display : flex;</em> to the appropriate CSS will override this behaviour and let divs appear next to each other.</li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+            <div class="contents">
+               <div class="title">
+                  <h3 id="mini_title11">Code, Test, Refine</h3>
+               </div>
+               <div class="para_content">
+                  <p>
+                     Here are steps to CODE your webpage :-<br>
+                  </p>
+                  <ol>
+                     <li> <span class="code">Look for natural boxes</span> : Build structure of the webpage by visually boxifying the given design.</li>
+                     <li> <span class="code">Look for repeated styles and semantic elements</span> : Write your HTML, and add relevant headings.</li>
+                     <li> <span class="code">Apply CSS styles</span> : Consider box sizing and positioning. Go from BIG to SMALL.</li>
+                     <li> <span class="code">Polish finer details</span> : Fix HTML and CSS as needed.</li>
+                  </ol>
+               </div>
+            </div>
+            <div class="contents">
+               <div class="title">
+                  <h3 id="mini_title12">Validating your code</h3>
+               </div>
+               <p>
+                  Once you have your code completed, it is important to <em>validate</em> it using the <b>W3C validation tools</b> for <a href="http://validator.w3.org/#validate_by_input">HTML</a>
+                  and <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a> so that you can find mistakes that might make the pages
+                  appear differently on different browsers and find out if you are conforming to the HTML5 standard or not in your code.
+               </p>
+            </div>
+         </div>
+         <br>
+      </div>
+      <div class="end">
+         <b>Thank You</b>
+      </div>
+   </body>
+</html>
